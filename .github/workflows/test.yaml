@@ -11,20 +11,15 @@ name: Test
 on: [push, pull_request]
 
 jobs:
-  tests:
+  Gradle:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.7", "3.8", "3.9"]
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
+    - uses: actions/setup-java@v3
       with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install local package
-      run: |
-        pip install -U pip
-        pip install -e .
-    - name: Run tests
-      run: python -m unittest -v
+        distribution: 'temurin'
+        java-version: '17'
+        cache: 'gradle'
+    - run: gradle assemble --info
+    - run: gradle test --info
+    - run: java -jar build/pipeline.jar --inputText="🎉"
