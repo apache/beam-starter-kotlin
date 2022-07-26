@@ -1,0 +1,12 @@
+# Build directories
+bin/
+build/
+
+# IDEs
+.classpath
+.project
+.settings/
+.vscode/
+
+# Gradle
+.gradle/
