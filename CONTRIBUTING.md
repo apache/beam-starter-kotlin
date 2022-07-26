@@ -6,7 +6,7 @@ There are many ways to contribute, here are some.
 
 ## Filing an issue
 
-If there's any issue you encounter or anything that needs to be fixed, feel free to [create a GitHub issue](https://github.com/apache/beam-starter-java/issues).
+If there's any issue you encounter or anything that needs to be fixed, feel free to [create a GitHub issue](https://github.com/apache/beam-starter-kotlin/issues).
 
 ## Contributing to this starter project
 
@@ -25,14 +25,14 @@ Here's a small overview of the process.
     ```sh
     export GITHUB_USERNAME="my-github-username"
 
-    git clone git@github.com:$GITHUB_USERNAME/beam-starter-java.git
+    git clone git@github.com:$GITHUB_USERNAME/beam-starter-kotlin.git
     ```
 
 1. Set the [upstream remote branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork).
 
     ```sh
-    cd beam-starter-java
-    git remote add upstream git@github.com:apache/beam-starter-java.git
+    cd beam-starter-kotlin
+    git remote add upstream git@github.com:apache/beam-starter-kotlin.git
     ```
 
 1. Create and change to a new branch.
