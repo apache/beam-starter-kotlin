@@ -22,4 +22,4 @@ jobs:
         cache: 'gradle'
     - run: gradle assemble --info
     - run: gradle test --info
-    - run: java -jar build/pipeline.jar --inputText="🎉"
+    - run: java -jar app/build/pipeline.jar --inputText="🎉"
