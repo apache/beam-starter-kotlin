@@ -14,8 +14,8 @@ import org.junit.Rule
 import org.junit.Test
 
 class AppTest {
-    val pipeline = TestPipeline.create()
-    @Rule public fun pipelineRule() = pipeline
+    @Transient val pipeline = TestPipeline.create()
+    @Rule fun pipelineRule() = pipeline
 
     @Test
     fun appHasAGreeting() {
