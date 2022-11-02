@@ -12,8 +12,22 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - tosun-si
+      - lukecwik
+      - kennknowles
+      - robertwb
+      - kileys
+      - apilloud
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - tosun-si
+      - lukecwik
+      - kennknowles
+      - robertwb
+      - kileys
+      - apilloud
