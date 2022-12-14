@@ -18,7 +18,6 @@ updates:
       - kennknowles
       - robertwb
       - kileys
-      - apilloud
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -30,4 +29,3 @@ updates:
       - kennknowles
       - robertwb
       - kileys
-      - apilloud
