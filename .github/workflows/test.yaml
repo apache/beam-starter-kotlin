@@ -14,12 +14,12 @@ jobs:
   Gradle:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-java@v3
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
         java-version: '17'
         cache: 'gradle'
-    - run: gradle assemble --info
-    - run: gradle test --info
+    - run: ./gradlew assemble --info
+    - run: ./gradlew test --info
     - run: java -jar app/build/pipeline.jar --inputText="🎉"
