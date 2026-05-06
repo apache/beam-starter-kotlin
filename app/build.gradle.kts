@@ -27,7 +27,7 @@ dependencies {
 
     // Test dependencies.
     testImplementation("junit:junit:4.13.2")
-    testImplementation("org.hamcrest:hamcrest:2.2")
+    testImplementation("org.hamcrest:hamcrest:3.0")
 }
 
 application { mainClass.set("beam.starter.AppKt") }
